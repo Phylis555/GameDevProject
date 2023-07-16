@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/gameover.unity
     guid: 20bc8a42e7f22844d9adb6757c888e80
+  - enabled: 1
+    path: Assets/Scenes/villegScene.unity
+    guid: dbd9dbd185f43fb43bb5e42b6217fab3
   m_configObjects: {}

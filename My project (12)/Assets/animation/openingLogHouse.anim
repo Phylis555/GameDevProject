@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: openLogHouse
+  m_Name: openingLogHouse
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: -0.0197, y: 0.0061, z: 0.0101}
+        value: {x: -0.019418616, y: -0.0042560594, z: 0.01}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -84,7 +84,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -0.0197
+        value: -0.019418616
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -112,7 +112,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.0061
+        value: -0.0042560594
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -140,7 +140,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.0101
+        value: 0.01
         inSlope: 0
         outSlope: 0
         tangentMode: 136

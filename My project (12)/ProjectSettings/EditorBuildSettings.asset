@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/villegScene.unity
     guid: dbd9dbd185f43fb43bb5e42b6217fab3
+  - enabled: 1
+    path: Assets/Scenes/cabinScene.unity
+    guid: 0bce5907d797a4cd8b0660dc119867e8
   m_configObjects: {}

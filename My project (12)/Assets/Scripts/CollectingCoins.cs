@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectingCoins : MonoBehaviour
 {
@@ -10,8 +11,6 @@ public class CollectingCoins : MonoBehaviour
     void Start()
     {
         ball.SetActive(false);
-        
-        
     }
     public void OnTriggerEnter(Collider col)
     {
@@ -27,10 +26,14 @@ public class CollectingCoins : MonoBehaviour
     void Update()
     {
         if(coins == 5)
-        {
-            
+        { 
             ball.SetActive(true);
         }
-        
+        if(coins > 5)
+        {
+            SceneManager.LoadScene(5);
+
+        }
+
     }
 }

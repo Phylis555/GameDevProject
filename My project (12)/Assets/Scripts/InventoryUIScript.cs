@@ -11,10 +11,12 @@ public class InventoryUIScript : MonoBehaviour
     void Start()
     {
         diamondText = GetComponent<TextMeshProUGUI>();
+        diamondText.text = scoreScript.score.ToString();
     }
 
     public void UpdateDiamondText(PlayerInventoryScript playerInventory)
     {
-        diamondText.text = playerInventory.NumberOfDiamonds.ToString();
+         
+        diamondText.text = scoreScript.score.ToString();
     }
 }

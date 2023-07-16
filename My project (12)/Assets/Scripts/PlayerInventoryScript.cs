@@ -9,9 +9,12 @@ public class PlayerInventoryScript : MonoBehaviour
 
     public UnityEvent<PlayerInventoryScript> OnDiamondCollected;
 
+   
     public void DiamondCollected()
     {
         NumberOfDiamonds++;
+        scoreScript.score=NumberOfDiamonds;
         OnDiamondCollected.Invoke(this);
     }
+  
 }

@@ -13,7 +13,7 @@ public class Cannon : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetKeyDown(KeyCode.G)&& scoreScript.inMaze) {
             var Nball = Instantiate(ball, ballSpawn.position, ballSpawn.rotation);
             Nball.Init(velocity);
         }

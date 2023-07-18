@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class brakabolScript : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class brakabolScript : MonoBehaviour
     [SerializeField] private float _breakForce = 2;
     [SerializeField] private float _collisionMultiplier = 100;
     [SerializeField] private bool _broken;
+   
 
     void OnCollisionEnter(Collision collision)
     {
@@ -26,4 +29,5 @@ public class brakabolScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+ 
 }

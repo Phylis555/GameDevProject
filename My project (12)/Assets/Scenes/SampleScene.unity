@@ -1646,6 +1646,102 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1014993836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1014993837}
+  - component: {fileID: 1014993840}
+  - component: {fileID: 1014993839}
+  - component: {fileID: 1014993838}
+  m_Layer: 5
+  m_Name: InstrucDiamondTxt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1014993837
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014993836}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1761804110}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 55.1964, y: -30}
+  m_SizeDelta: {x: 1045.3108, y: 127.6324}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1014993838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014993836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9150943, g: 0.88631773, b: 0.88631773, a: 0.5}
+  m_EffectDistance: {x: 4, y: -4}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1014993839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014993836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.47167066, g: 0.069301, b: 0.6886792, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 100
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Collect the diamonds
+--- !u!222 &1014993840
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014993836}
+  m_CullTransparentMesh: 1
 --- !u!1 &1068916794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,6 +2884,7 @@ GameObject:
   - component: {fileID: 1761804108}
   - component: {fileID: 1761804107}
   - component: {fileID: 1761804111}
+  - component: {fileID: 1761804112}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2874,6 +2971,7 @@ RectTransform:
   - {fileID: 846398579}
   - {fileID: 1676435942}
   - {fileID: 442270662}
+  - {fileID: 1014993837}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2894,6 +2992,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01aeac2e48c6d4a4599db1519d981df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1761804112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761804106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4e55353eb54ce419cc5187851bac0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrucDiamondTxt: {fileID: 1014993839}
 --- !u!1 &1867277713
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,8 +3390,6 @@ MonoBehaviour:
   - {fileID: 846398581}
   - {fileID: 1676435944}
   - {fileID: 442270664}
-  - {fileID: 0}
-  - {fileID: 0}
   fullHeart: {fileID: 21300000, guid: c70fcc4a31eeadd4b933d4924d0e7bd2, type: 3}
   emptyHeart: {fileID: 21300000, guid: e70ffb5323643b14eab2b374f3bf5fdf, type: 3}
   anim: {fileID: 1935325108}

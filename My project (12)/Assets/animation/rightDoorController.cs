@@ -20,7 +20,8 @@ public class rightDoorController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        rightDoorAnimetor.SetBool("RightIsOpen", true);
+        if (scoreScript.keyColected)
+            rightDoorAnimetor.SetBool("RightIsOpen", true);
 
     }
 

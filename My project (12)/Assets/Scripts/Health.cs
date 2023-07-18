@@ -78,7 +78,7 @@ public class Health : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         // Code to be executed after the delay
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
 }

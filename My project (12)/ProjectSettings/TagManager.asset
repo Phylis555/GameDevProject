@@ -7,6 +7,7 @@ TagManager:
   - WayPoints
   - Bear
   - Coin
+  - key
   layers:
   - Default
   - TransparentFX

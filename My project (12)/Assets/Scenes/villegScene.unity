@@ -1998,7 +1998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -81.57001}
+  m_AnchoredPosition: {x: 0, y: -269}
   m_SizeDelta: {x: 939.271, y: 123.14}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &402668833
@@ -4623,7 +4623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0}
   m_SizeDelta: {x: 791.022, y: 123.14099}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &857530155
@@ -8204,7 +8204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -84}
   m_SizeDelta: {x: 1693.288, y: 123.14}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1401478920
@@ -14078,6 +14078,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 97ab44380cb77384997fb40e9c0a24d1, type: 3}
   m_PrefabInstance: {fileID: 2049476104}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2049476106 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 97ab44380cb77384997fb40e9c0a24d1, type: 3}
+  m_PrefabInstance: {fileID: 2049476104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2049476107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14092,6 +14097,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyCollectText: {fileID: 402668834}
   cabinText: {fileID: 1401478921}
+--- !u!114 &2049476108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530557755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc941d7c4d1bbf46835f7cfe3ee8099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  numOfHearts: 3
+  hearts:
+  - {fileID: 1781352807}
+  - {fileID: 2087822635}
+  - {fileID: 1631935227}
+  fullHeart: {fileID: 21300000, guid: c70fcc4a31eeadd4b933d4924d0e7bd2, type: 3}
+  emptyHeart: {fileID: 21300000, guid: e70ffb5323643b14eab2b374f3bf5fdf, type: 3}
+  anim: {fileID: 2049476106}
 --- !u!1 &2074727698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 117122, guid: 22780bb3d42e70349b5857c462d56bcb, type: 3}

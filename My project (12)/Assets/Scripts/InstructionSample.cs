@@ -6,9 +6,12 @@ using UnityEngine;
 public class InstructionSample : MonoBehaviour
 {
     public Text instrucDiamondTxt;
+    public Text instrucDoorTxt;
+
     void Start()
     {
-         instrucDiamondTxt.gameObject.SetActive(false);
+        instrucDiamondTxt.gameObject.SetActive(false);
+        instrucDoorTxt.gameObject.SetActive(false);
         ShowTextForDuration();
     }
 
@@ -20,10 +23,26 @@ public class InstructionSample : MonoBehaviour
 
     public void ShowTextForDuration()
     {
-        StartCoroutine(ShowTextCoroutine());
+        StartCoroutine(showTempDiamondsTxt());
     }
 
-    private IEnumerator ShowTextCoroutine()
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            showTempDoorTxt();
+        }
+    }
+
+    private IEnumerator showTempDoorTxt()
+    {
+        instrucDoorTxt.gameObject.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        instrucDoorTxt.gameObject.SetActive(false);
+
+    }
+
+    private IEnumerator showTempDiamondsTxt()
     {
         // Show the text
         instrucDiamondTxt.gameObject.SetActive(true);

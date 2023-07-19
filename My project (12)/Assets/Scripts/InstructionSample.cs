@@ -28,9 +28,11 @@ public class InstructionSample : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            showTempDoorTxt();
+            Debug.Log("Collision with player detected!");
+           
+            StartCoroutine(showTempDoorTxt());
         }
     }
 

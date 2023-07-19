@@ -8,6 +8,7 @@ TagManager:
   - Bear
   - Coin
   - key
+  - invisibleBox
   layers:
   - Default
   - TransparentFX

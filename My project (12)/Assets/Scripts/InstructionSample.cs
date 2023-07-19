@@ -8,8 +8,8 @@ public class InstructionSample : MonoBehaviour
     public Text instrucDiamondTxt;
     void Start()
     {
-        // instrucDiamondTxt.gameObject.SetActive(false);
-        ShowTextCoroutine();
+         instrucDiamondTxt.gameObject.SetActive(false);
+        ShowTextForDuration();
     }
 
     // Update is called once per frame
@@ -18,15 +18,20 @@ public class InstructionSample : MonoBehaviour
         
     }
 
+    public void ShowTextForDuration()
+    {
+        StartCoroutine(ShowTextCoroutine());
+    }
+
     private IEnumerator ShowTextCoroutine()
     {
         // Show the text
-        instrucDiamondTxt.enabled =true;
+        instrucDiamondTxt.gameObject.SetActive(true);
 
         // Wait for 5 seconds
         yield return new WaitForSeconds(5f);
 
         // Hide the text after 5 seconds
-        instrucDiamondTxt.enabled =false;
+        instrucDiamondTxt.gameObject.SetActive(false);
     }
 }

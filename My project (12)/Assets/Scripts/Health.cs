@@ -10,8 +10,8 @@ public class Health : MonoBehaviour
     //[SerializeField] private float startingHealth;
     //public float currentHealth { get; private set; }
 
-    public int health;
-    public int numOfHearts;
+    [SerializeField] private int health;
+    [SerializeField] private int numOfHearts;
 
     public Image[] hearts;
     public Sprite fullHeart;
@@ -21,6 +21,10 @@ public class Health : MonoBehaviour
     public Animator anim;
     private bool dead = false;
 
+    private void Start()
+    {
+        health = scoreScript.harts;
+    }
 
     void Update()
     {
@@ -32,7 +36,9 @@ public class Health : MonoBehaviour
         for (int i = 0; i < hearts.Length; i++)
         {
 
-            if(i < health)
+            //  if(i < health)
+            if (i < scoreScript.harts)
+
             {
                 hearts[i].sprite = fullHeart;
 
@@ -58,6 +64,7 @@ public class Health : MonoBehaviour
         {
 
             health--;
+            scoreScript.harts = health;
             if (health <= 0)
             {
                 anim.SetTrigger("die");

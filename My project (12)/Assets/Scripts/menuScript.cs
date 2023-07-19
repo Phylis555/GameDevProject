@@ -9,6 +9,10 @@ public class menuScript : MonoBehaviour
     public Button exitText;
     void Start()
     {
+        scoreScript.harts = 3;
+        scoreScript.keyColected = false;
+        scoreScript.score = 0;
+        scoreScript.inMaze = false;
         //  quitMenu = quitMenu.GetComponent<Canvas>();
         //  startText = startText.GetComponent<Button>();
         //  exitText = exitText.GetComponent<Button>();

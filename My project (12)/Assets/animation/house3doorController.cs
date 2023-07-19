@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class house3doorController : MonoBehaviour
 {
     Animator DoorAnimetor;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,7 @@ public class house3doorController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         DoorAnimetor.SetBool("isOpen", true);
-
+      
     }
 
 

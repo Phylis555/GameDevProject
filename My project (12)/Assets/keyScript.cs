@@ -5,13 +5,12 @@ using UnityEngine.UI;
 
 public class keyScript : MonoBehaviour
 {
-    public Text keyInstctionText;
+    
     public Text keyCollectText;
     public Text cabinText;
 
     private void Start()
     {
-        keyInstctionText.enabled = true;
         keyCollectText.enabled = false;
         cabinText.enabled = false;
     }
@@ -20,7 +19,7 @@ public class keyScript : MonoBehaviour
         if(other.gameObject.tag=="key")
         {
             cabinText.enabled = false;
-            keyInstctionText.enabled = false;
+          
             keyCollectText.enabled = true;
             scoreScript.score += 10;
             scoreScript.keyColected = true;

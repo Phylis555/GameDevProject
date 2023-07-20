@@ -8,12 +8,14 @@ public class keyScript : MonoBehaviour
     
     public Text keyCollectText;
     public Text cabinText;
-    
+    public Text gardText;
 
     private void Start()
     {
         keyCollectText.enabled = false;
         cabinText.enabled = false;
+        StartCoroutine(showgardTxt());
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -38,7 +40,12 @@ public class keyScript : MonoBehaviour
         keyCollectText.enabled = false;
     }
 
-
+    private IEnumerator showgardTxt()
+    {
+        gardText.enabled = true;
+        yield return new WaitForSeconds(5f);
+        gardText.enabled = false;
+    }
 
 
 

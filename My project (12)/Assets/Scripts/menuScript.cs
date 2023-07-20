@@ -38,5 +38,10 @@ public class menuScript : MonoBehaviour
     { // "Yes" button in our Quit menu
         Application.Quit();
     }
+    private void Update()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 
 }

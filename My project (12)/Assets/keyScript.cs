@@ -8,6 +8,7 @@ public class keyScript : MonoBehaviour
     
     public Text keyCollectText;
     public Text cabinText;
+    
 
     private void Start()
     {
@@ -18,18 +19,28 @@ public class keyScript : MonoBehaviour
     {
         if(other.gameObject.tag=="key")
         {
-            cabinText.enabled = false;
-          
-            keyCollectText.enabled = true;
+            // keyCollectText.enabled = true;
+            StartCoroutine(showKeyTxt());
+
+            cabinText.enabled = true;
             scoreScript.score += 10;
             scoreScript.keyColected = true;
             other.gameObject.SetActive(false);
         }
+      
     }
-    private void OnTriggerExit(Collider other)
+   
+
+    private IEnumerator showKeyTxt()
     {
+        keyCollectText.enabled = true;
+        yield return new WaitForSeconds(5f);
         keyCollectText.enabled = false;
-        cabinText.enabled = true;
     }
+
+
+
+
+
 
 }

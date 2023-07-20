@@ -55,13 +55,14 @@ public class RayCastController : MonoBehaviour
             // Debug.Log("Hit");
             // if (hit.collider.gameObject.tag == "Player")
             // {
-            //hit.collider.transform.position = new Vector3(719f, 18.8f, 503f);
-            //transform.position = new Vector3(519f, -0.8f, 420f);
-            Chase();
-            //Debug.Log("inside: " + scoreScript.harts);
-            //scoreScript.harts--;
-            //if (scoreScript.harts <= 0)
-            //    SceneManager.LoadScene(3);
+            raycastStartPosition += transform.position + Vector3.down * elevation;
+            hit.collider.transform.position = new Vector3(719f, 18.8f, 503f);
+           // transform.position = new Vector3(519f, -0.8f, 420f);
+            // Chase();
+            Debug.Log("inside: " + scoreScript.harts);
+            scoreScript.harts--;
+            if (scoreScript.harts <= 0)
+                SceneManager.LoadScene(3);
 
 
             // }

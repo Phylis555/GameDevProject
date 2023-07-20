@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
 
     
     public Animator anim;
-    private bool dead = false;
+  //  private bool dead = false;
 
     private void Start()
     {
@@ -36,7 +36,7 @@ public class Health : MonoBehaviour
         for (int i = 0; i < hearts.Length; i++)
         {
 
-            //  if(i < health)
+       
             if (i < scoreScript.harts)
 
             {

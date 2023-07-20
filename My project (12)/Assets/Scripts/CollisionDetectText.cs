@@ -23,17 +23,17 @@ public class CollisionDetectText : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("InvisibleBox"))
+        if (collision.gameObject.tag == "invisibleBox")
         {
             Debug.Log("Collision with player detected!");
-
-            StartCoroutine(showTempDoorTxt());
+            instrucDoorTxt.gameObject.SetActive(true);
+          //  StartCoroutine(showTempDoorTxt());
         }
     }
 
     private IEnumerator showTempDoorTxt()
     {
-        instrucDoorTxt.gameObject.SetActive(true);
+        
         yield return new WaitForSeconds(5f);
         instrucDoorTxt.gameObject.SetActive(false);
 

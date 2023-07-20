@@ -19,7 +19,9 @@ public class Health : MonoBehaviour
 
     
     public Animator anim;
-  //  private bool dead = false;
+    [SerializeField] private AudioSource HitSound;
+
+    //  private bool dead = false;
 
     private void Start()
     {
@@ -64,6 +66,7 @@ public class Health : MonoBehaviour
         {
 
             health--;
+            HitSound.Play();
             scoreScript.harts = health;
             if (health <= 0)
             {

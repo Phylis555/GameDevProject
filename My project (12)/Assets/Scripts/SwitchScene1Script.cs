@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class SwitchScene1Script : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject BGmusic;
     void Start()
     {
-        
+        DontDestroyOnLoad(BGmusic);
     }
 
     // Update is called once per frame

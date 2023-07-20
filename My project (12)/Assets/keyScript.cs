@@ -9,6 +9,7 @@ public class keyScript : MonoBehaviour
     public Text keyCollectText;
     public Text cabinText;
     public Text gardText;
+    [SerializeField] private AudioSource collectSound;
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class keyScript : MonoBehaviour
     {
         if(other.gameObject.tag=="key")
         {
-            // keyCollectText.enabled = true;
+            collectSound.Play();
             StartCoroutine(showKeyTxt());
 
             cabinText.enabled = true;

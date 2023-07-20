@@ -7,6 +7,7 @@ public class CollectingCoins : MonoBehaviour
 {
     public int coins;
     public GameObject ball;
+    [SerializeField] private AudioSource collectSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class CollectingCoins : MonoBehaviour
     {
         if(col.gameObject.tag == "Coin")
         {
+            collectSound.Play();
             Debug.Log("Coin collected! ");
             coins = coins + 1;
             col.gameObject.SetActive(false);

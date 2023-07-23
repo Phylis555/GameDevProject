@@ -18,7 +18,7 @@ public class keyScript : MonoBehaviour
         StartCoroutine(showgardTxt());
 
     }
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag=="key")
         {

@@ -14,4 +14,5 @@ public class DiamondScript : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+  
 }

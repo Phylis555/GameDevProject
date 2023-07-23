@@ -13,16 +13,18 @@ public class CollectingCoins : MonoBehaviour
     {
         ball.SetActive(false);
     }
-    public void OnTriggerEnter(Collider col)
+
+    void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Coin")
+        if (col.gameObject.tag == "Coin")
         {
             collectSound.Play();
             Debug.Log("Coin collected! ");
             coins = coins + 1;
-            col.gameObject.SetActive(false);
+            Destroy(col.gameObject);
         }
     }
+
 
     // Update is called once per frame
     void Update()

@@ -423,6 +423,7 @@ GameObject:
   - component: {fileID: 220887909}
   - component: {fileID: 220887908}
   - component: {fileID: 220887907}
+  - component: {fileID: 220887911}
   m_Layer: 0
   m_Name: ball
   m_TagString: Coin
@@ -438,7 +439,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220887906}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -508,6 +509,22 @@ Transform:
   m_Father: {fileID: 644794619}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &220887911
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220887906}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &224575570
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +833,7 @@ GameObject:
   - component: {fileID: 427220352}
   - component: {fileID: 427220351}
   - component: {fileID: 427220350}
+  - component: {fileID: 427220354}
   m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Coin
@@ -831,7 +849,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427220349}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -901,6 +919,22 @@ Transform:
   m_Father: {fileID: 644794619}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &427220354
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427220349}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &644794618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,6 +1828,7 @@ GameObject:
   - component: {fileID: 991608954}
   - component: {fileID: 991608953}
   - component: {fileID: 991608952}
+  - component: {fileID: 991608956}
   m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Coin
@@ -1809,7 +1844,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991608951}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1879,6 +1914,22 @@ Transform:
   m_Father: {fileID: 644794619}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &991608956
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991608951}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1000113291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,6 +2401,7 @@ GameObject:
   - component: {fileID: 1069982833}
   - component: {fileID: 1069982832}
   - component: {fileID: 1069982831}
+  - component: {fileID: 1069982835}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Coin
@@ -2365,7 +2417,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069982830}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -2435,6 +2487,22 @@ Transform:
   m_Father: {fileID: 644794619}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1069982835
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069982830}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1082086337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2738,6 +2806,7 @@ GameObject:
   - component: {fileID: 1291310044}
   - component: {fileID: 1291310043}
   - component: {fileID: 1291310042}
+  - component: {fileID: 1291310046}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Coin
@@ -2753,7 +2822,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291310041}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -2823,6 +2892,22 @@ Transform:
   m_Father: {fileID: 644794619}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1291310046
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291310041}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1301800403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3675,6 +3760,7 @@ GameObject:
   - component: {fileID: 1634280013}
   - component: {fileID: 1634280012}
   - component: {fileID: 1634280011}
+  - component: {fileID: 1634280015}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Coin
@@ -3690,7 +3776,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634280010}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -3760,6 +3846,22 @@ Transform:
   m_Father: {fileID: 644794619}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1634280015
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634280010}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1703148066
 GameObject:
   m_ObjectHideFlags: 0

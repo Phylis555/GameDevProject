@@ -34,4 +34,9 @@ public class PlayerMove : MonoBehaviour
         //simple move applies delta time automatically
         charController.SimpleMove(forwardMovement + rightMovement);
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("kkkkkkkkk");
+    }
+
 }

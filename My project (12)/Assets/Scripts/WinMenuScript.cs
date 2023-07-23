@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class WinMenuScript : MonoBehaviour
 {
     public Button startText;
-    public Button exitText;
+    public Button returnText;
     public Text numOfDimond;
    
     public void StartLevel()

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
+using UnityEngine.UI;
+
 
 public class RayCastController : MonoBehaviour
 {
@@ -10,10 +12,9 @@ public class RayCastController : MonoBehaviour
     private int layerMask;
     private int layerNumber = 6;
 
-    private bool isChasing = false;
-
     GameObject player;
     NavMeshAgent agent;
+    public Text guardHitTxt;
 
 
     public float raycastCooldown = 1f; 
@@ -32,6 +33,7 @@ public class RayCastController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player");
         layerMask = 1 << layerNumber;
+        guardHitTxt.gameObject.SetActive(false);
     }
     void Update()
     {
@@ -47,18 +49,15 @@ public class RayCastController : MonoBehaviour
             // if (Physics.Raycast(raycastStartPosition, transform.forward, out hit, 15))
             if (Physics.Raycast(raycastStartPosition, transform.forward, out hit, raycastDistance, layerMask))
             {
+                StartCoroutine(showGuardHitTxt());
                 Debug.Log("Hit");
                 Debug.Log("inside: " + scoreScript.harts);
                 scoreScript.harts--;
                 if (scoreScript.harts <= 0)
                     SceneManager.LoadScene(3);
 
-
-              
                 raycastTimer = raycastCooldown;
-
             }
-
         }
         else
         {
@@ -67,9 +66,16 @@ public class RayCastController : MonoBehaviour
     }
 
 
-    void Chase()
+    private IEnumerator showGuardHitTxt()
     {
-        agent.SetDestination(player.transform.position);
+        // Show the text
+        guardHitTxt.gameObject.SetActive(true);
+
+        // Wait for 5 seconds
+        yield return new WaitForSeconds(5f);
+
+        // Hide the text after 5 seconds
+        guardHitTxt.gameObject.SetActive(false);
     }
 }
 

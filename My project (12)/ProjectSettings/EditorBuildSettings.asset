@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/WinScene.unity
-    guid: f6075e99e647e414889b1d36fe703b35
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/gameover.unity
     guid: 20bc8a42e7f22844d9adb6757c888e80
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MazeScene.unity
     guid: 473448e1d13abcb42887bc70eac12e7d
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: df3c48c5696faaf47b28c26a87450d50
   m_configObjects: {}

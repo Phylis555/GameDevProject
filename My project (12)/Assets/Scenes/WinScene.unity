@@ -239,6 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c4b32b92181a44f941f84bd7c51f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startText: {fileID: 379070907}
+  exitText: {fileID: 493254213}
   numOfDimond: {fileID: 1564950370}
 --- !u!1 &379070905
 GameObject:
@@ -277,7 +279,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 27, y: 253}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 301.9525, y: 50}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &379070907
 MonoBehaviour:
@@ -418,7 +420,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -60.071228, w: 0}
+  m_margin: {x: 0, y: 0, z: 1.8912659, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -469,8 +471,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 27, y: 147}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 27, y: 145.34436}
+  m_SizeDelta: {x: 322.7894, y: 51.6556}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &493254212
 MonoBehaviour:
@@ -587,7 +589,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.65
+  m_fontSize: 39.5
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -623,7 +625,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -60.071228, w: 0}
+  m_margin: {x: 0, y: 0, z: -1.5018616, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

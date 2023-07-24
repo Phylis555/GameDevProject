@@ -10,12 +10,9 @@ public class WinMenuScript : MonoBehaviour
     public Button returnText;
     public Text numOfDimond;
    
-    public void StartLevel()
-    { //this function will be used on our Play button
-        SceneManager.LoadScene(1);
-    }
+
     public void MenuLevel()
-    { //this function will be used on our Play button
+    { //this function will be used on our Return button
         SceneManager.LoadScene(0);
     }
 

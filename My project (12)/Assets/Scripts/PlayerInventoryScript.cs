@@ -9,14 +9,7 @@ public class PlayerInventoryScript : MonoBehaviour
     [SerializeField] private AudioSource collectSound;
 
     public UnityEvent<PlayerInventoryScript> OnDiamondCollected;
-    void Start()
-    {
-        scoreScript.harts = 3;
-        scoreScript.keyColected = false;
-        scoreScript.score = 0;
-        scoreScript.inMaze = false;
-        
-    }
+  
 
         public void DiamondCollected()
     {

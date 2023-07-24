@@ -33,6 +33,7 @@ public class InstructionSample : MonoBehaviour
             Debug.Log("Collision with player detected!");
            
             StartCoroutine(showTempDoorTxt());
+            Destroy(this.gameObject);
         }
     }
 

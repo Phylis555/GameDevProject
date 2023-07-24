@@ -8,6 +8,7 @@ public class scoreScript : MonoBehaviour
     public static bool inMaze=false;
     public static bool keyColected = false;
     public static int harts=3;
+    public static int numOfGame = 0;
 
 
 }

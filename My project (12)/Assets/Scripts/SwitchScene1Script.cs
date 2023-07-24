@@ -10,6 +10,9 @@ public class SwitchScene1Script : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(BGmusic);
+        if (scoreScript.numOfGame != 0)
+            Destroy(BGmusic);
+        scoreScript.numOfGame++;
     }
 
     // Update is called once per frame

@@ -25,9 +25,8 @@ public class RayCastController : MonoBehaviour
 
 
 
-
     public float elevation = 2.0f; // Adjust this value to control the elevation of the raycast
-                                  
+    [SerializeField] private AudioSource HitSound;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -53,6 +52,7 @@ public class RayCastController : MonoBehaviour
                 Debug.Log("Hit");
                 Debug.Log("inside: " + scoreScript.harts);
                 scoreScript.harts--;
+                HitSound.Play();
                 if (scoreScript.harts <= 0)
                     SceneManager.LoadScene(3);
 

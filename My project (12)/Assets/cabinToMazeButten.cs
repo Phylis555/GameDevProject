@@ -8,6 +8,7 @@ public class cabinToMazeButten : MonoBehaviour
 {
     public Text cannonText;
     public Text Instructions;
+    public Text Instructions2;
     public Button mazeButten;
 
     // Start is called before the first frame update
@@ -18,6 +19,8 @@ public class cabinToMazeButten : MonoBehaviour
             cannonText.enabled = false;
             mazeButten.enabled = true;
             Instructions.enabled = true;
+            Instructions2.enabled = false;
+
 
 
         }
@@ -26,6 +29,7 @@ public class cabinToMazeButten : MonoBehaviour
             mazeButten.gameObject.SetActive(false);
             cannonText.enabled = true;
             Instructions.enabled = false;
+            Instructions2.enabled = true;
 
         }
 
